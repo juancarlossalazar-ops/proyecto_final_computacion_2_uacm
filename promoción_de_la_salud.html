@@ -1,0 +1,1732 @@
+body{
+font-family: 'Times New Roman', Times, serif;
+background-color: #14f5aa;
+color: rgb(28, 25, 31);
+
+
+}
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+:root {
+    --verde: #6bbf59;
+    --crema: #f7f6f2;
+    --oscuro: #333;
+}
+
+
+.header {
+    position: relative;
+    text-align: center;
+    padding: 40px 20px;
+    color: rgb(24, 23, 23);
+}
+
+.hero-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    opacity: 0.9;
+}
+
+
+.nav {
+    background: rgb(226, 146, 146);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--oscuro);
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: var(--verde);
+}
+
+
+.section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.7;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+
+
+
+    }
+    .no-points{
+    list-style: none;
+    padding-left: 0;
+}
+
+.section.alt {
+    background: var(--crema);
+}
+
+.section-img {
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px 0;
+    
+}
+
+
+.card {
+    background: rgb(47, 146, 228);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    text-align: center;
+    height: auto;
+    width: auto;
+
+}
+
+.card img {
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgb(240, 221, 54);
+    color: rgb(3, 40, 143);
+    margin-top: 30px;
+    border-top: 3px solid var(--verde);
+}
+
+
+.fade-in {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.slide-down {
+    animation: slideDown 1s ease;
+}
+
+.zoom:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bounce:hover {
+    animation: bounce 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+}
+
+
+@media (max-width: 600px) {
+    .nav ul {
+        flex-direction: column;
+    }
+    .nav a {
+        margin: 10px 0;
+    }
+}
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrición Consciente</title>
+    <link rel="stylesheet" href="Nutricion-conciente.css">
+    <link rel="shortcut icon" href="ICONOS SERV ESE-04.png" type="image/x-icon">
+
+</head>
+<body>
+
+    
+    <header class="header fade-in">
+        <img class="hero-img" src="dibujos-del-plato-del-buen-comer-scaled.jpg" alt="Comida saludable">
+        <h1>Nutrición Consciente</h1>
+        <p>Comer bien empieza por escucharte.</p>
+    </header>
+
+    
+    <nav class="nav slide-down">
+        <a href="promocion de la salud.html" class="button">Inicio</a>
+
+        <ul>
+            <li><a href="#que-es">¿Qué es?</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#principios">Principios</a></li>
+            <li><a href="#tips">Tips</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    
+    <section id="que-es" class="section fade-in">
+        <h2>¿Qué es la nutrición consciente?</h2>
+        <img class="section-img" src="comiendo.jpeg" alt="Persona comiendo con calma">
+        <p>
+            Es un enfoque que te invita a conectar con tu cuerpo, respetar tus señales internas 
+            y tomar decisiones alimentarias con calma y claridad.
+        </p>
+    </section>
+
+    
+    <section id="beneficios" class="section alt fade-in">
+        <h2>Beneficios</h2>
+        <img class="section-img" src="guy-girl-sitting-crosslegged-doing-260nw-2232023443.webp" alt="Alimentos naturales">
+        <ul>
+            <li>Mejora tu digestión</li>
+            <li>Reduce ansiedad alimentaria</li>
+            <li>Ayuda a escuchar tu hambre real</li>
+            <li>Fortalece la relación con la comida</li>
+            <li>Fomenta hábitos saludables sin obsesión</li>
+        </ul>
+    </section>
+
+    
+    <section id="principios" class="section fade-in">
+        <h2>Principios básicos</h2>
+
+        <article class="card zoom">
+            <img src="escucha.jpg" alt="Escucha tu cuerpo">
+            <h3>Escucha tu cuerpo</h3>
+            <p>Aprende a distinguir hambre física vs emocional.</p>
+        </article>
+
+        <article class="card zoom">
+            <img src="niño comedes.jpeg" alt="Come despacio">
+            <h3>Come despacio</h3>
+            <p>Disfruta cada bocado para mejorar la saciedad.</p>
+        </article>
+
+        <article class="card zoom">
+            <img src="hambre-saciedad.jpg.webp" alt="Honra tu saciedad">
+            <h3>Honra tu saciedad</h3>
+            <p>Evita comer por obligación o costumbre.</p>
+        </article>
+    </section>
+
+    
+    <section id="tips" class="section alt fade-in">
+        <h2>Tips prácticos</h2>
+        <img class="section-img" src="images.jpeg" alt="Plato saludable">
+        <ul>
+            <li>Antes de comer, respira 10 segundos.</li>
+            <li>Evita pantallas mientras comes.</li>
+            <li>Porciones pequeñas, repite si realmente lo necesitas.</li>
+            <li>Incluye colores naturales en tu plato.</li>
+            <li>Hidrátate antes de comer.</li>
+        </ul>
+    </section>
+
+    
+    <section id="contacto" class="section fade-in">
+        <h2>Contacto</h2>
+        <img class="section-img" src="istockphoto-1168945108-612x612.jpg" alt="Contacto">
+        <p>¿Quieres asesoría o recursos personalizados? Escríbeme:</p> <br><br><br>
+        <a class="btn bounce" href="mailto:tucorreo@example.com">Enviar correo</a>
+    </section>
+
+    
+    <footer class="footer fade-in">
+        <p>© Juan Carlos 2025 Nutrición Consciente. Vive en equilibrio.</p>
+    </footer>
+
+</body>
+</html>
+body{
+    background-color: rgb(216, 84, 13);
+font-family: 'Times New Roman', Times, serif;
+margin: 25px;
+color: rgb(179, 2, 105);
+line-height: 1.6;
+text-align: center;
+align-items: center;
+}
+h1,h2,h3{
+font-family: 'Times New Roman', Times, serif;
+font-weight: 700;
+color: rgb(127, 168, 255);
+margin-bottom: 0.5em;
+}
+
+.button {
+display: inline-block;
+padding: 12px 24px;
+background-color: rgb(201, 172, 10);
+color: rgb(31, 20, 9);
+text-decoration: none;
+border-radius: 5px;
+transition: background-color 0.3s ease aquamarine red violet;
+
+text-align: center;
+align-items: center;
+}
+.button:hover{
+    background-color: blueviolet;
+}
+
+header{
+background-color: coral;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: 0 2px 5px navy;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+width: 50px;
+margin-right: 10px;
+}
+
+nav a {
+color: crimson;
+text-decoration: none;
+margin-left: 20px;
+transition: color 0.3s ease;
+}
+
+nav a:hover{
+color: rgb(54, 255, 13);
+}
+
+.hero{
+background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+url(´images/fondo-hero.png´) no-repeat center center fixed;
+background-size: cover;
+color: rgb(31, 19, 2);
+text-align: center;
+padding: 100px 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.hero-content{
+max-width: 600px;
+margin-right: 20px;
+}
+
+.hero-image img{
+width: 400px;
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.temas-principales{
+padding: 60px 20px;
+text-align: center;
+} 
+.temas-grid{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 30px;
+margin-top: 30px;
+}
+.tema{
+background-color: chartreuse;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tema:hover{
+transform: translateY(-5px);
+}
+
+.tema img{
+width: 100%;
+height: 200px;
+object-fit: cover;
+}
+
+.tema h3{
+margin: 15px;
+font-size: 1.5em;
+}
+
+.tema p{
+margin: 15px;
+}
+
+
+.recursos-destacados{
+background-color: brown;
+padding: 60px 20px;
+text-align: center;
+
+
+align-items: center;
+}
+
+
+.recursos-lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.recurso {
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;  
+}
+.recurso:hover{
+transform: translateY(-5px);
+
+text-align: center;
+align-items: center;
+}
+
+.recurso i{
+font-size: 3em;
+color: rgb(88, 255, 55);
+margin-bottom: 15px;
+text-align: center;
+align-items: center;
+width: 10%;
+height: 20px;
+
+}
+
+.formlario-contacto{
+padding: 60px 20px;
+text-align: center;
+}
+
+.formlario-contacto form{
+max-width: 600px;
+margin: 20px auto;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.formlario-contacto input,
+.formlario-contacto textarea{
+padding: 15px;
+border-radius: 5px;
+border-radius: 1px solid orange;
+font-size: 1em;
+}
+
+footer{
+background-color: turquoise;
+color: yellow;
+text-align: center;
+padding: 20px;
+}
+
+.contenedor{
+display: flex;
+place-content: center;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+
+
+footer{
+text-align: center;
+padding: 1em 0;
+background-color: blue;
+color: orangered;
+
+}
+
+footer{
+animation: colores 10s infinite;
+}
+@keyframes colores{
+0%{background-color: aqua;}
+25%{background-color: bisque;color: black;}
+50%{background-color: brown;color: rgb(33, 224, 15);}
+75%{background-color: coral;color: black;}
+100%{background-color: rgb(219, 207, 34);}
+
+
+}
+
+
+
+
+
+.fab:hover{
+transform: rotate(360deg) scale(1.1);
+transition: all 3s ease;
+
+
+}
+
+.fa-brands{
+    color: #25D366;
+box-shadow: 3px 3px 3px 3px;
+    border-radius: 5px;
+transform: rotate(360deg) scale(1.1);
+transition: all 1s ease;
+
+}
+
+.fa-whatsapp{ color: #25D366;
+
+}
+
+.fa-facebook{
+    color: #1877F2;
+    
+}
+
+.fa-instagram{
+    color: rgb(251, 12, 219);
+background: linear-gradient(45deg,navy ,red,purple );
+
+}
+
+.fa-twitter{
+    color: black;
+}
+
+.fa-youtube{
+    color: red;
+}
+
+a:hover .fa-brands{
+color: rgb(231, 250, 15);
+transform: rotate(15deg)scale(1.2);
+transition: all 4s ease;
+align-items: center;
+text-align: center;
+width: 100%;
+height: 200px;
+}
+.contenedor_de_iconos{
+display: flex;
+height: 40vh;
+flex-direction: row;
+justify-content: center;
+align-items: flex-end;
+gap: 12px;
+width: 100%;
+height: 200px;
+}
+.material-simbols-outlined{
+color: coral;
+}
+
+.video-container{
+position: relative;
+width: 100%;
+padding-bottom: 56.25%;
+height: 0;
+overflow: hidden;
+}
+
+.video-container iframe{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promocion de la salud- Tu bienestar es primero</title>
+<link rel="shortcut icon" href="ICONOS SERV ESE-04.png" type="image/x-icon">
+<link rel="stylesheet" href="promocion de la salud.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+<body onload="iniNevada(100,70)">
+    <h1>Promocion de la Salud</h1>
+<header>
+<div class="logo">
+<img src="estrella de la salud.jpg" alt="logo de promocion de la salud">
+<h1>Salud Activa</h1>
+</div>
+<nav>
+<a href="#inicio">inicio</a>
+<a href="#temas">temas</a>
+<a href="#recursos">recursos</a>
+<a href="#contacto">contacto</a>
+
+<a href="Formulario de inscripcion.html" target="_top">ir a formulario de inscripción</a>
+
+</nav>
+</header>
+
+<section id="inicio" class="hero">
+<div class="hero-content"> <br> <br> <br>
+<h2>¡Invierte en tu bienestar!</h2>
+<p>Descubre consejos prácticos y recursos para una vida mas saludable y feliz.</p>
+<a href="#temas" class="button">Explorar temas</a> <br> <br> <br>
+
+<div class="video-container">
+    <video src="Video de WhatsApp 2025-11-27 a las 16.37.52_a2b2d683.mp4" 
+           autoplay 
+           loop 
+           muted 
+           playsinline
+           width="560"
+           height="315">
+    </video>
+</div>
+</div>
+<div class="hero-image"> <br> <br> <br>
+<img src="deporte salud.jpg" alt="personas saludables y activas"> <br><br> <br>
+</div>
+</section>
+<section id="temas" class="temas pricipales">
+<h2>Temas clave</h2>
+<div class="temas-grid">
+<div class="tema">
+<img src="nutricion salud.jpg" alt="Nutrición Saludable">
+
+<h3>Nutrición Consciente</h3>
+<p>Aprende a alimentarte de manera equilibrada,sana y deliciosa.</p>
+<a href="Nutricion-consiente.html" class="button">Más Información</a>
+</div>
+<div class="tema">
+<img src="ejercicio salud.jpg" alt="Actividad Física">
+<h3>Actividad Física Regular</h3>
+<p>Encuentra rutinas y ejercicios que se adapten a tu estilo de vida.</p>
+<a href="Actividad-fisica-regular.html" class="button">Más Información</a> <br> <br> <br>
+</div>
+<div class="tema">
+<img src="salud mental.jpg" alt="Salud Mental">
+<h3>Bienestar Mental</h3>
+<p>Gestiona el estrés,mejora tu autoestima y cultiva la felicidad.</p>
+<a href="Bienestar-mental.html" class="button">Más Información</a>
+</div>
+<div class="tema">
+<img src="sueño reparador.jpg" alt="Sueño Reparador">
+<h3>Sueño Reparador</h3>
+<p>descubre cómo mejorar la calidad de tu sueño para un mejor rendimiento diario.</p>
+<a href="Sueño-reparador.html" class="button">Más Información</a>
+</div>
+</div>
+</section>
+<section id="Recursos" class="Recursos-Destacados">
+<h2>Recursos Útiles</h2>
+<div class="Recursos-lista">
+<div class="recurso">
+<i class="fasfa-book"></i>    
+<h3>Guías y Manuales</h3>
+<p>Descargar guías detalladas sobre diversos temas de salud.</p>
+<a href="https://www.imss.gob.mx/salud-en-linea/guias-salud" class="button">Descargar</a>
+</div>
+<br><br><br>
+<div class="recurso"> 
+<i class="fasfa-podcast"></i>
+<h3>Podcast Inspiradores</h3> 
+<p>Escucha podcast con expertos y testimonios sobre el bienestar de la salud y los que con lleva.</p>
+<a href="https://www.youtube.com/watch?v=iFl68_vZLXQ" class="button">Escuchar</a>
+</div>
+</div>
+</section>
+<section id="contacto" class="formulario-contacto">
+<h2>¡Contáctanos!</h2>
+<p>¿Tienes preguntas o sugerencias? ¡Escribenos!</p>
+<form>
+<input type="text" placeholder="Tu nombre">
+<input type="email" placeholder="tu Email">
+<br><br><br><br>
+<button type="submit" class="button">Enviar mensaje</button>
+</form>
+
+
+</section>
+<footer>
+<p>© 2025 Juan Carlos Promoción de la Salud | Todos los derechos reservados</p>
+<p>Juan Carlos Salazar García</p> <br> 
+<p>juan.carlos.salazar@estudiantxs.uacm.edu.mx</p>
+
+<a href="https://www.facebook.com" class="icon facebook"><i class="fab fa-facebook fa-2x"></i></a>
+<a href="https://www.twitter.com" class="icon twitter"><i class="fab fa-twitter fa-2x"></i></a>
+<a href="https://www.instagram.com" class="icon instagram"><i class="fab fa-instagram fa-2x"></i></a>
+<a href="https://www.whatsapp.com" class="icon whatsapp"><i class="fab fa-whatsapp fa-2x"></i></a>
+<a href="https://www.youtube.com" class="icon youtube"><i class="fab fa-youtube fa-2x"></i></a>
+
+</footer>
+<script src="https://kit.fontawesome.com/tu-codigo-fontawesome.js" crossorigin="anonymous"></script>
+<a href="#inicio">inicio</a>
+
+
+
+<script>
+class oCopo{
+  constructor(tam, id){
+     this.x = 0;
+     this.y = 0;
+     this.size = tam;
+     this.nombre = id
+     this.obj = document.createElement("div");
+     this.obj.setAttribute('id',id);
+     this.obj.innerText="*";
+     this.obj.style.position = "absolute";
+     this.obj.style.fontSize = tam+"px";
+     this.obj.style.color = "white";
+     document.body.appendChild(this.obj)
+}
+dibujar(x,y){
+     this.x = x;
+     this.y = y;
+     this.obj.style.top = this.y+"px";
+     this.obj.style.left = this.x+"px";
+     }
+}
+function iniCopos(num, anc, alto){
+   var copos = new Array(num);
+   var tam, x, y;
+   for (let i = 0; i<num; i++)
+     {
+     tam = Math.round(Math.random()*10)+ 8;
+     copos[i] = new oCopo(tam, "c"+i);
+     x = parseInt(Math.random()*anc);
+     y = parseInt(Math.random()*alto);
+     copos[i].dibujar(x,y);
+     }
+return copos;
+}
+function iniNevada(num, vel)
+{
+var ancho = document.body.offsetWidth-10;
+var alto = window.innerHeight-10;
+var losCopos = iniCopos(num, ancho, alto)
+nevar(losCopos, ancho,alto, vel);
+} 
+function nevar(copos, coposAncho, coposAlto, vel)
+{
+var x, y;
+for (let i = 0; i < copos.length; i++)
+    {
+    y = copos[i].y;
+     x = copos[i].x;
+    if (Math.random() > 0.5)
+        y += parseInt(Math.random()+1);
+    y += parseInt(Math.random()+2);
+    if (y >= (coposAlto - copos[i].size))
+        {
+        y = Math.round(Math.random()*10);
+        x  =parseInt(Math.random()*coposAncho-1); 
+        }
+copos[i].dibujar(x,y); 
+    }
+setTimeout(nevar, vel, copos,  coposAncho, coposAlto, vel);
+}
+</script>
+</body>
+</html>
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: #0b0f19;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+
+.hero {
+    padding: 120px 20px;
+    background: linear-gradient(180deg, #0b0f19 0%, #12182b 100%);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    animation: glow 3s infinite alternate;
+}
+
+
+.imagen-central img {
+    width: 90%;
+    max-width: 800px;
+    border-radius: 20px;
+    display: block;
+    margin: 40px auto;
+    box-shadow: 0 0 40px rgba(0, 170, 255, 0.4);
+}
+
+
+.lista-beneficios {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.lista-beneficios li {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    padding-left: 30px;
+    position: relative;
+}
+
+.lista-beneficios li::before {
+    content: "✔";
+    color: #4ec9b0;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 40px 20px;
+}
+
+.card {
+    background: #151c2f;
+    padding: 25px;
+    border-radius: 20px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 40px rgba(0, 170, 255, 0.6);
+}
+
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: reveal 1s ease forwards;
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    animation: reveal-left 1s ease forwards;
+}
+
+.reveal-zoom {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: reveal-zoom 1.2s ease forwards;
+}
+
+.reveal-card {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: reveal 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+
+@keyframes reveal {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes reveal-left {
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes reveal-zoom {
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #00aaff; }
+    to { text-shadow: 0 0 25px #00e1ff; }
+}
+p{
+    text-align: center;
+    align-items: center;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: white;
+    margin-top: 40px;
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sueño Reparador</title>
+    <link rel="stylesheet" href="Sueño-reparador.css">
+    <link rel="shortcut icon" href="ICONOS SERV ESE-04.png" type="image/x-icon">
+
+</head>
+<body>
+
+    
+    <section class="hero reveal">
+        <h1>Sueño Reparador</h1>
+        <p>Una mente clara y un cuerpo fuerte comienzan con un buen descanso.</p>
+    </section>
+
+    <nav>
+        <a href="promocion de la salud.html" class="button">Inicio</a>
+
+    </nav>
+    <section class="imagen-central reveal-zoom">
+        <img src="https://images.unsplash.com/photo-1505968409348-bd000797c92e" alt="Dormir bien">
+    </section>
+
+    
+    <section class="beneficios">
+        <h2 class="reveal">Beneficios del sueño profundo</h2>
+
+        <ul class="lista-beneficios">
+            <li class="reveal-left">Mejora la memoria y concentración</li>
+            <li class="reveal-left">Fortalece tu sistema inmune</li>
+            <li class="reveal-left">Regula emociones y estrés</li>
+            <li class="reveal-left">Favorece el rendimiento físico</li>
+            <li class="reveal-left">Repara tejidos y músculos</li>
+        </ul>
+    </section>
+
+    
+    <section class="imagen-central reveal-zoom">
+        <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb" alt="Descanso profundo">
+    </section>
+
+    
+    <section class="tips">
+        <h2 class="reveal">Tips para mejorar tu descanso</h2>
+
+        <div class="cards">
+            <div class="card reveal-card">
+                <h3>Rutina nocturna</h3>
+                <p>Establece horarios fijos y rituales relajantes antes de dormir.</p>
+            </div>
+            <div class="card reveal-card">
+                <h3>Ambiente adecuado</h3>
+                <p>Usa iluminación cálida, ventilación y un colchón cómodo.</p>
+            </div>
+            <div class="card reveal-card">
+                <h3>Desconexión digital</h3>
+                <p>Evita pantallas al menos 40 minutos antes de dormir.</p>
+            </div>
+        </div>
+    </section>
+<footer class="footer fade-in">
+        <p>© Juan Carlos 2025 Nutrición Consciente. Vive en equilibrio.</p>
+    </footer>
+</body>
+</html>
+body{
+background-color: #2374e1;
+
+
+
+}
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    
+    --gris: #f5f5f5;
+    --oscuro: #1a1a1a;
+    --verde: #4cd964;
+}
+
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background: green;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+
+.nav {
+    background: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+
+.nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: blue;
+}
+
+
+.section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.section.alt {
+    background: gray;
+}
+
+.section-img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+
+.lista-beneficios {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+.lista-beneficios li {
+    position: relative;
+    padding-left: 30px;
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.lista-beneficios li::before {
+    content: "✔";
+    color: green;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+.fade-in {
+    animation: fade 1s ease forwards;
+}
+
+.slide-down {
+    animation: slideDown 1s ease;
+}
+
+.zoom:hover {
+    transform: scale(1.05);
+}
+
+.bounce:hover {
+    animation: bounce 0.6s;
+}
+
+@keyframes fade {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-7px); }
+}
+
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: white;
+    margin-top: 40px;
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Física Regular</title>
+    <link rel="stylesheet" href="Actividad-fisica-regular.css">
+    <link rel="shortcut icon" href="ICONOS SERV ESE-04.png" type="image/x-icon">
+
+</head>
+<body onload="iniNevada(100,70)">
+
+<header class="hero fade-in">
+    <img src="principales-beneficios-del-entrenamiento-personal.jpg" class="hero-img" alt="Entrenamiento">
+    <div class="hero-text">
+        <h1>Actividad Física Regular</h1> 
+        
+        
+        <a href="#que-es"  class="btn">Descubrir más</a> 
+<br> <br><br>
+        <p>Muévete. Respira. Vive mejor.</p>
+    </div>
+</header>
+
+<nav class="nav slide-down">
+    <a href="promocion de la salud.html" class="button">Inicio</a>
+   
+    <ul>
+        <li><a href="#que-es">¿Qué es?</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#tipos">Tipos</a></li>
+        <li><a href="#tips">Tips</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+<section id="que-es" class="section fade-in">
+    <h2>¿Qué es la actividad física regular?</h2>
+    <img src="diferencias-entre-actividad-fisica-y-ejercicio_7_1200x690.jpeg" class="section-img" alt="">
+    <p>Consiste en mover tu cuerpo de manera constante para mejorar tu salud física y mental. No necesitas ser atleta: solo constancia.</p>
+</section>
+
+<section id="beneficios" class="section alt fade-in">
+    <h2>Beneficios</h2>
+    <ul class="lista-beneficios">
+        <li>Mejora tu energía</li>
+        <li>Fortalece tu corazón</li>
+        <li>Aumenta tu fuerza</li>
+        <li>Reduce estrés y ansiedad</li>
+        <li>Mejora el sueño</li>
+    </ul>
+</section>
+
+<section id="tipos" class="section fade-in cards">
+    <h2>Tipos de actividad</h2>
+
+    <article class="card zoom">
+        <img src="descarga.jpeg" alt="">
+        <h3>Entrenamiento de fuerza</h3>
+        <p>Construye músculo, mejora postura y previene lesiones.</p>
+    </article>
+
+    <article class="card zoom">
+        <img src="cardio.jpeg" alt="">
+        <h3>Cardio</h3>
+        <p>Mejora resistencia, circulación y quema calorías.</p>
+    </article>
+
+    <article class="card zoom">
+        <img src="flexibilidad.jpeg" alt="">
+        <h3>Flexibilidad</h3>
+        <p>Libera tensión y mejora movilidad.</p>
+    </article>
+
+</section>
+
+<section id="tips" class="section alt fade-in">
+    <h2>Tips para empezar</h2>
+    <img src="lista.avif" class="section-img" alt="">
+    <ul class="lista-beneficios">
+        <li>Inicia con 15 minutos diarios</li>
+        <li>Elige actividades que disfrutes</li>
+        <li>Combina fuerza y cardio</li>
+        <li>Descansa cuando tu cuerpo lo pida</li>
+        <li>Hidrátate bien</li>
+    </ul>
+</section>
+
+<section id="contacto" class="section fade-in">
+    <h2>Contacto</h2>
+    <p>¿Quieres una guía personalizada? Escríbeme:</p>
+
+    <br><br><br>
+    <a href="" class="btn bounce">Enviar correo</a>
+</section>
+
+<footer class="footer">
+    <p>© Juan Carlos 2025 Actividad Física Regular</p>
+</footer>
+
+<script>
+class oCopo{
+  constructor(tam, id){
+     this.x = 0;
+     this.y = 0;
+     this.size = tam;
+     this.nombre = id
+     this.obj = document.createElement("div");
+     this.obj.setAttribute('id',id);
+     this.obj.innerText="*";
+     this.obj.style.position = "absolute";
+     this.obj.style.fontSize = tam+"px";
+     this.obj.style.color = "white";
+     document.body.appendChild(this.obj)
+}
+dibujar(x,y){
+     this.x = x;
+     this.y = y;
+     this.obj.style.top = this.y+"px";
+     this.obj.style.left = this.x+"px";
+     }
+}
+function iniCopos(num, anc, alto){
+   var copos = new Array(num);
+   var tam, x, y;
+   for (let i = 0; i<num; i++)
+     {
+     tam = Math.round(Math.random()*10)+ 8;
+     copos[i] = new oCopo(tam, "c"+i);
+     x = parseInt(Math.random()*anc);
+     y = parseInt(Math.random()*alto);
+     copos[i].dibujar(x,y);
+     }
+return copos;
+}
+function iniNevada(num, vel)
+{
+var ancho = document.body.offsetWidth-10;
+var alto = window.innerHeight-10;
+var losCopos = iniCopos(num, ancho, alto)
+nevar(losCopos, ancho,alto, vel);
+} 
+function nevar(copos, coposAncho, coposAlto, vel)
+{
+var x, y;
+for (let i = 0; i < copos.length; i++)
+    {
+    y = copos[i].y;
+     x = copos[i].x;
+    if (Math.random() > 0.5)
+        y += parseInt(Math.random()+1);
+    y += parseInt(Math.random()+2);
+    if (y >= (coposAlto - copos[i].size))
+        {
+        y = Math.round(Math.random()*10);
+        x  =parseInt(Math.random()*coposAncho-1); 
+        }
+copos[i].dibujar(x,y); 
+    }
+setTimeout(nevar, vel, copos,  coposAncho, coposAlto, vel);
+}
+</script>
+</body>
+</html>
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #f35a5a;
+    color: #333;
+}
+
+
+.hero {
+    position: relative;
+    background: url("https://images.pexels.com/photos/570018/pexels-photo-570018.jpeg") center/cover no-repeat;
+    padding: 140px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #6a11cb88, #2575fc88);
+    backdrop-filter: blur(3px);
+}
+
+.hero h1,
+.hero p {
+    position: relative;
+    z-index: 2;
+}
+
+
+section {
+    padding: 50px 20px;
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.lista {
+    list-style: none;
+    padding: 0;
+}
+
+.lista li {
+    margin: 12px 0;
+    font-size: 1.2rem;
+    background: #f9f9f9;
+    padding: 12px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #0001;
+    display: inline-block;
+}
+
+
+.cards {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 260px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 6px 20px #0002;
+    overflow: hidden;
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 10px 30px #0003;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.4s ease forwards;
+}
+
+.slide-up {
+    opacity: 0;
+    animation: slideUp 1.4s ease forwards;
+}
+
+
+.zoom {
+    opacity: 0;
+    animation: zoomIn 1.4s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: white;
+    margin-top: 40px;
+}
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienestar Mental</title>
+    <link rel="stylesheet" href="Bienestar-mental.css">
+    <link rel="shortcut icon" href="ICONOS SERV ESE-04.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <header class="hero">
+        <div class="overlay"></div>
+        <h1 class="fade-in">Bienestar Mental</h1>
+        <p class="fade-in">Cultiva paz, claridad y equilibrio.</p>
+    </header>
+    <nav>
+        <a href="promocion de la salud.html" class="button">Inicio</a>
+
+    </nav>
+
+    <section class="intro slide-up">
+        <h2>¿Qué es el bienestar mental?</h2>
+        <p>Es tu capacidad para manejar emociones, mantener calma ante el caos y sentirte pleno contigo mismo.</p>
+    </section>
+
+    <section class="beneficios slide-up">
+        <h2>Beneficios</h2>
+        <ul class="lista">
+            <li>Menos estrés ✨</li>
+            <li>Más claridad mental 🔍</li>
+            <li>Mejor autoestima 💛</li>
+            <li>Relaciones más sanas 🙌</li>
+            <li>Mayor bienestar general 🌿</li>
+        </ul>
+    </section>
+
+    <section class="habitos fade-in">
+        <h2>Hábitos que ayudan</h2>
+
+        <div class="cards">
+            <div class="card zoom">
+                <img src="https://images.pexels.com/photos/317155/pexels-photo-317155.jpeg" alt="Respiración">
+                <h3>Respiración consciente</h3>
+                <p>Respira profundo 1 min para calmar tu sistema nervioso.</p>
+            </div>
+
+            <div class="card zoom">
+                <img src="https://images.pexels.com/photos/4148252/pexels-photo-4148252.jpeg" alt="Journaling">
+                <h3>Escritura terapéutica</h3>
+                <p>Escribe tus emociones para liberar tensión mental.</p>
+            </div>
+
+            <div class="card zoom">
+                <img src="https://images.pexels.com/photos/2908175/pexels-photo-2908175.jpeg" alt="Movimiento">
+                <h3>Movimiento suave</h3>
+                <p>Caminar 15 min cambia por completo tu estado de ánimo.</p>
+            </div>
+        </div>
+    </section>
+<footer class="footer">
+    <p>© Juan Carlos 2025 Actividad Física Regular</p>
+</footer>
+</body>
+</html>
+body{
+background-color: blueviolet;
+color: rgb(238, 192, 42);
+font-weight: bolder;
+
+
+}
+
+#nombre{
+background-color: rgb(36, 232, 134);
+border: solid blue;
+}
+#correo{
+background-color: rgb(244, 96, 96);
+border: solid rgb(7, 137, 61);
+}
+
+#matricula{
+background-color: rgb(15, 220, 29);
+border: solid rgb(157, 66, 5);
+
+}
+
+h1{
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+border: 4px solid orange;
+margin: 10px;
+align-items: center;
+gap: 12px;
+
+
+}
+
+#enviar, #limpiar{
+background-color: aquamarine;
+padding: 11px;
+border-radius: 5px;
+border: 2px solid purple;
+font-size: large;
+box-shadow: 0 0 10px 0px navy;
+color: rgb(1, 21, 21);
+width: 100px;
+height: 100px;
+}
+
+body{
+animation: colores 10s infinite;
+}
+@keyframes colores{
+0%{background-color: aqua;}
+25%{background-color: bisque;color: black;}
+50%{background-color: brown;color: rgb(33, 224, 15);}
+75%{background-color: coral;color: black;}
+100%{background-color: green;}
+}
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de inscripción</title>
+    <link rel="stylesheet" href="Formulario de inscripcion.css">
+    <link rel="shortcut icon" href="ICONOS SERV ESE-04.png" type="image/x-icon">
+</head>
+<body>
+    
+<h1>formulario de inscripción</h1>
+<h1>¡Aqui empieza tu oportunidad!</h1>
+<form action="">
+
+    <nav>
+        <a href="promocion de la salud.html" class="button">Inicio</a>
+
+    </nav>
+    <br> <br>
+<label for="nombre"> Nombre Completo:
+<input type="text" name="" id="nombre completo"size="50"placeholder="escribe tu nombre completo"> 
+
+</label>
+<br>      <br>
+
+
+<br><br>
+<label for="nombre">correo electronico
+
+</label>
+<input type="email" name="" id="correo electronico" size="50"placeholder="escribe tu correo institucional @estudiantxs.uacm.edu.mx">
+</label>
+<br> <br>
+<label for="password">password
+<br>
+<br>
+<input type="" name="" id="password" placeholder="ingresa un password seguro,con minimo 10 caracteresy 2 simbolos" size="55">
+</label>
+
+<br><br>
+<label for="carrera">licenciatura que estudias
+
+</label>
+<select name="" id="carrera">
+    <option value="nutricion">nutrición</option>
+ <option value="">promoción de la salud</option> 
+  <option value="">isei</option>
+   <option value="">isei</option>
+    <option value="">comunicación</option>
+     <option value="">modelación</option>
+      <option value="">derecho</option>
+
+
+
+</select>
+<br><br>
+<label for="turno">en que turno estudias:
+<input type="radio" name="" id="matutino">matutino
+<input type="radio" name="" id="vespertino">vespertino
+<input type="radio" name="" id="mixto">mixto
+
+<br><br>
+<label for="cursos">que cursos te interesan <br>
+    <input type="checkbox" name="" id="">inteligencia artificial <br>
+    <input type="checkbox" name="" id="">comida saludable <br>
+    <input type="checkbox" name="" id="">cuidado de adultos mayores <br>
+    <input type="checkbox" name="" id="">robotica <br>
+    <input type="checkbox" name="" id="">derecho fiscal <br>
+
+</label>
+
+<br> <br> 
+<label for="nombre">quejas y sugerencias
+    <textarea name="" id="" cols="55" rows="15"></textarea>
+</label>
+<br> <br>
+<label for="nombre">cel:
+<input type="tel" name="" id="">
+</label>
+
+<br> <br>
+<label for="telefono">telefono:
+
+<input type="text" inputmode="numeric" 
+pattern="[0-9] {10}"
+maxlength="10"
+oninput="this.value=this.value.replace(/[^0-9]/g,'').slice(0,10)"
+required>
+
+</label>
+
+
+
+
+
+<br> <br>
+<label for="nombre">
+<input id="enviar" type="submit" value="enviar">
+</label>
+
+
+<br> <br>
+<label for="nombre">
+<button id="limpiar" type="reset">limpiar</button>
+</label>
+
+
+</form>
+
+</body>
+</html>
